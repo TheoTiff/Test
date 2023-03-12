@@ -23,10 +23,11 @@ const Model10 = () => {
             document.querySelector(".ecrit2").style.display = "block";
             const response = openai.createCompletion({
                 model: "text-davinci-003",
-                prompt: ``,
+                prompt: `You are a copywritter since 20 years. `,
                 temperature: 0.5,
                 max_tokens: 250
             });
+           
             response.then(response => {
                 anim.style.display = "none";
                 select.style.display = "inline-block";
@@ -55,7 +56,7 @@ const Model10 = () => {
                     <label>Intended Audience</label>
                     <input type="text" />
                 </div>
-                <button className='chat-form-button'>Generate</button>
+                <button className='chat-form-button' onClick={generate}>Generate</button>
             </div>
         </div>
     )
