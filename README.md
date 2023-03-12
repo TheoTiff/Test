@@ -1,4 +1,4 @@
-## Chnagements
+## Changements
 
 # Getting Started with Create React App
 
