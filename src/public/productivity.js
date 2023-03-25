@@ -6,7 +6,7 @@ const apiKey = "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";
 
 const Productivity = () => {
     useEffect(() => {
-        document.body.style.backgroundColor = "white"
+        document.body.style.backgroundColor = "white";
     })
 
 return (
